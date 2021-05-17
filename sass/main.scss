@@ -1,17 +1,4 @@
-:root {
-  --main-font: 'Roboto', sans-serif;
-  --logo-font: 'Raleway', sans-serif;
-  --main-text-color: #212121;
-  --alter-text-color: #ffffff;
-  --parag-text-color: #757575;
-  --hov-color: #2196f3;
-  --dark-backgr-color: #2f303a;
-  --button-backgr-color: #f5f4fa;
-  --icons-color: #afb1b8;
-  --hov-link-color: #ffffff;
-  --modal-bg-col: rgba(0, 0, 0, 0.2);
-}
-
+@import './utils/variables';
 body {
   font-family: var(--main-font);
   font-size: 14px;
@@ -479,15 +466,16 @@ img {
   background-color: var(--alter-text-color);
   color: #000000;
 }
-.close-modal-svg{
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)}
+.close-modal-svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .modal-button:focus .close-modal-svg,
-.modal-button:hover .close-modal-svg{
-  fill:var(--hov-color)
+.modal-button:hover .close-modal-svg {
+  fill: var(--hov-color);
 }
-.submit-button{
-    transform: translate(-50%, -50%) scale(0.1),
+.submit-button {
+  transform: translate(-50%, -50%) scale(0.1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -511,7 +499,7 @@ textarea {
 .modal-form {
   width: 100%;
 }
-.form{
+.form {
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -521,10 +509,13 @@ textarea {
   position: relative;
   margin-bottom: 10px;
 }
+.form-label-comment {
+  margin-bottom: 20px;
+}
+
 .form-label > input {
   padding-left: 42px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -532,13 +523,14 @@ textarea {
   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:focus{
-  border-color:var(--hov-color);
-    cursor: pointer;
-    outline: none;
+.form-input:focus {
+  border-color: var(--hov-color);
+  cursor: pointer;
+  outline: none;
 }
-.form-input:focus + svg{
-fill: var(--hov-color)}
+.form-input:focus + svg {
+  fill: var(--hov-color);
+}
 
 .form-label > label {
   margin-bottom: 4px;
@@ -547,7 +539,7 @@ fill: var(--hov-color)}
   letter-spacing: 0.01em;
   color: var(--parag-text-color);
 }
-.form-svg{
+.form-svg {
   position: absolute;
   fill: var(--main-text-color);
   margin-left: 21px;
@@ -575,48 +567,48 @@ textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.thumb-policy{
+.thumb-policy {
   display: flex;
   position: relative;
-    justify-content: center;
-     align-items: center;
-     text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-.policy-text{
-font-size: 14px;
-line-height: 1.71;
-margin: 0;
-display: flex;
-justify-content: center;
-text-align: center;
-align-items: center;
+.policy-text {
+  font-size: 14px;
+  line-height: 1.71;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
-.policy-text > a{
+.policy-text > a {
   color: var(--hov-color);
   margin-left: 4px;
 }
-.policy-text::before{
-  content: "";
-    display: inline-block;
-    width: 16px;
-    height: 15px;
-    margin-right: 8px;
-    border: 2px solid var(--dark-backgr-color);
-    border-radius: 2px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-     transition: bbackground-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.policy-text::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+  border: 2px solid var(--dark-backgr-color);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: bbackground-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-    
-.checkbox:checked + .policy-text::before{
+
+.checkbox:checked + .policy-text::before {
   background-color: var(--hov-color);
   background-image: url(../images/icons/modals-icons/icon-check.svg);
-border-color: transparent;
-background-repeat: no-repeat;
-background-position: center;
-block-size: contain;
+  border-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  block-size: contain;
 
-transition: background-color 2505ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 2505ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .thumb-button {
   display: flex;
@@ -624,30 +616,30 @@ transition: background-color 2505ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-top: 30px;
   padding-bottom: 40px;
 }
-.submit-button{
-    display: inline-block;
-    text-align: center;
-    justify-content: center;
-    color: var(--hov-link-color);
-    background-color: var(--hov-color);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    cursor: pointer;
-    width: 200px;
-    height: 50px;
-    border: none;
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.submit-button {
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+  color: var(--hov-link-color);
+  background-color: var(--hov-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .submit-button:focus,
 .submit-button:hover {
-  background-color:#188CE8
+  background-color: #188ce8;
 }
 
-    /* page Portfolio */
+/* page Portfolio */
 .button-portfolio {
   font-weight: 500;
   font-size: 16px;
@@ -882,8 +874,9 @@ transition: background-color 2505ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .subsc-form > input::placeholder {
   padding: 15px;
- font-size: 16px;
-line-height: 1.25;
-letter-spacing: 0.03em;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
 
-color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
+}
