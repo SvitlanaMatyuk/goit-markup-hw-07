@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 
 
 </head>
@@ -411,50 +411,50 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
 
-            <button class="modal-button" data-modal-close>
-                <svg class="close-modal-svg" width=18px height=18px>
+            <button class="modal__button" data-modal-close>
+                <svg class="modal__button-svg" width=18px height=18px>
                     <use href="./images/icons/modals-icons/sprite-modal.svg#icon-close-black-icon"></use>
                 </svg>
             </button>
             <form action="" class="modal-form">
                 <div class="form">
-                    <p class="form-title">
+                    <p class="form__title">
                         Оставьте свои данные, мы вам перезвоним
                     </p>
 
-                    <div class="form-label">
-                        <label for="name">Имя</label>
-                        <input type="text" name="name" id="name" class="form-input">
-                        <svg class="form-svg" width=18px height=18px>
+                    <div class="form__label">
+                        <label for="name" class="form__label-item">Имя</label>
+                        <input type="text" name="name" id="name" class="form__input">
+                        <svg class="form__svg" width=18px height=18px>
                             <use href="./images/icons/modals-icons/sprite-modal.svg#icon-person-black-icon"></use>
                         </svg>
 
                     </div>
-                    <div class="form-label">
-                        <label for="tel">Телефон</label>
-                        <input type="tel" name="tel" id="tel" class="form-input">
-                        <svg class="form-svg" width=18px height=18px>
+                    <div class="form__label">
+                        <label for="tel" class="form__label-item">Телефон</label>
+                        <input type="tel" name="tel" id="tel" class="form__input">
+                        <svg class="form__svg" width=18px height=18px>
                             <use href="./images/icons/modals-icons/sprite-modal.svg#icon-phone-black-icon"></use>
                         </svg>
                     </div>
-                    <div class="form-label">
-                        <label for="mail">Почта</label>
-                        <input type="email" name="mail" id="mail" class="form-input">
-                        <svg class="form-svg" width=18px height=18px>
+                    <div class="form__label">
+                        <label for="mail" class="form__label-item">Почта</label>
+                        <input type="email" name="mail" id="mail" class="form__input">
+                        <svg class="form__svg" width=18px height=18px>
                             <use href="./images/icons/modals-icons/sprite-modal.svg#icon-email-black-icon"></use>
                         </svg>
                     </div>
-                    <div class="form-label form-label-comment">
-                        <label for="comment">Комментарий</label>
-                        <textarea name="comment" id="comment" placeholder="Введите текст" class="form-input"></textarea>
+                    <div class="form__label form__label-comment">
+                        <label for="comment" class="form__label-item">Комментарий</label>
+                        <textarea name="comment" id="comment" placeholder="Введите текст" class="form__input--comment"></textarea>
                     </div>
-                    <div class="thumb-policy">
+                    <div class="form__thumb-policy">
                         <input type="checkbox" name="policy" id="policy" class="checkbox visually-hidden">
-                        <label for="policy" class="policy-text">Соглашаюсь с рассылкой и принимаю 
-                            <a href="">Условия договора</a></label>
+                        <label for="policy" class="form__policy-text">Соглашаюсь с рассылкой и принимаю 
+                            <a href="" class="form__policy-link">Условия договора</a></label>
                     </div>
-                    <div class="thumb-button">
-                        <button type="submit" class="submit-button">Отправить</button>
+                    <div class="button-submit">
+                        <button type="submit" class="button-submit__btn">Отправить</button>
                     </div>
                 </div>
             </form>
