@@ -184,6 +184,10 @@ img {
   color: var(--hov-color);
 }
 
+.list-nav__link-address {
+  color: var(--parag-text-color);
+}
+
 .contacts-header {
   display: flex;
   align-items: center;
