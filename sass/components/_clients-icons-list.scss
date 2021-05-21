@@ -6,14 +6,13 @@
 .clients__item {
   width: 170px;
   height: 92px;
-}
-
-.clients-item:hover,
-.clients-item:focus {
-  border-color: var(--hov-color);
-}
-.clients__item:not(:last-child) {
-  margin-right: 30px;
+  &:hover,
+  &:focus {
+    border-color: var(--hov-color);
+  }
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .clients__link {
@@ -25,10 +24,10 @@
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.clients__link:hover,
-.clients__link:focus {
-  border-color: var(--hov-color);
+  &:hover,
+  &:focus {
+    border-color: var(--hov-color);
+  }
 }
 
 .clients__icons-svg {
@@ -36,8 +35,8 @@
   height: 60px;
   fill: var(--icons-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.clients__link:hover .clients__icons-svg,
-.clients__link:focus .clients__icons-svg {
-  fill: var(--hov-color);
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: var(--hov-color);
+  }
 }
